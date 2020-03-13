@@ -11,7 +11,7 @@ const server = browserSync.create();
 
 const copy = () => src(["src/**.html", "src/**.css"]).pipe(dest("public/"));
 
-const scripts = (build = false) => {
+const scripts = (cb, build = false) => {
   const plugins = [
     resolve(),
     glslify(),
