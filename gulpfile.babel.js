@@ -38,7 +38,7 @@ const scripts = (cb, build = false) => {
   );
 };
 
-const buildScripts = () => scripts(true);
+const buildScripts = cb => scripts(cb, true);
 
 const reload = cb => {
   server.reload();
