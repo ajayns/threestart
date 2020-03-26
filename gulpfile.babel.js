@@ -28,7 +28,7 @@ const scripts = (cb, build = false) => {
   }
 
   return rollup({
-    input: "src/scripts/app.js",
+    input: "src/scripts/index.js",
     plugins
   }).then(bundle =>
     bundle.write({
